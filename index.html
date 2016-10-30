@@ -9,22 +9,22 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     
       
-        <title>Remoção Palácio - Documento de Especificação do aplicativo de remoção do Palácio dos Leilões</title>
+        <title>Capacitação Net On - Documentos de capacitação para os colaboradores da Net On</title>
       
       
-        <meta name="description" content="Documento de Especificação do aplicativo de remoção do Palácio dos Leilões">
+        <meta name="description" content="Documentos de capacitação para os colaboradores da Net On">
       
       
-        <link rel="canonical" href="http://www.palaciodosleiloes.com.br/">
+        <link rel="canonical" href="http://www.netonsolucoes.com.br/">
       
       
         <meta name="author" content="Otávio Fernandes">
       
     
-    <meta property="og:url" content="http://www.palaciodosleiloes.com.br/">
-    <meta property="og:title" content="Remoção Palácio">
-    <meta property="og:image" content="http://www.palaciodosleiloes.com.br//./images/logo.png">
-    <meta name="apple-mobile-web-app-title" content="Remoção Palácio">
+    <meta property="og:url" content="http://www.netonsolucoes.com.br/">
+    <meta property="og:title" content="Capacitação Net On">
+    <meta property="og:image" content="http://www.netonsolucoes.com.br//./images/logo.png">
+    <meta name="apple-mobile-web-app-title" content="Capacitação Net On">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     
@@ -76,7 +76,7 @@
   
   
   
-  <body class="palette-primary-indigo ">
+  <body class="palette-primary-orange ">
     
     <div class="backdrop">
       <div class="backdrop-paper"></div>
@@ -99,7 +99,7 @@
             
           </span>
         
-        Remoção Palácio
+        Capacitação Net On
       </div>
     </div>
     
@@ -141,7 +141,7 @@
         </div>
       
       <div class="name">
-        <strong>Remoção Palácio 0.1</strong>
+        <strong>Capacitação Net On 1.0</strong>
         
       </div>
     </div>
@@ -170,32 +170,17 @@
               </a>
             </li>
           
-            <li class="anchor">
-              <a title="Etapas do Projeto" href="#etapas-do-projeto">
-                Etapas do Projeto
-              </a>
-            </li>
-          
-            <li class="anchor">
-              <a title="Perfis identificados" href="#perfis-identificados">
-                Perfis identificados
-              </a>
-            </li>
-          
-            <li class="anchor">
-              <a title="API de integração" href="#api-de-integracao">
-                API de integração
-              </a>
-            </li>
-          
-            <li class="anchor">
-              <a title="Modelo de dados" href="#modelo-de-dados">
-                Modelo de dados
-              </a>
-            </li>
-          
         </ul>
       
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="Guia para Gerenciamento de projetos" href="guideprojectplanning/guide/">
+      Guia para Gerenciamento de projetos
+    </a>
     
   </li>
 
@@ -224,95 +209,10 @@
       <article class="article">
         <div class="wrapper">
           
-          <h1 id="especificacao-palacio-remocao-aplicativo-de-remocao-de-veiculos-do-palacio-dos-leiloes">Especificação Palácio Remoção - Aplicativo de Remoção de Veículos do Palácio dos Leilões<a class="headerlink" href="#especificacao-palacio-remocao-aplicativo-de-remocao-de-veiculos-do-palacio-dos-leiloes" title="Permanent link">#</a></h1>
+          <h1 id="capacitacao-de-colaboradores-da-net-on">Capacitação de Colaboradores da Net On<a class="headerlink" href="#capacitacao-de-colaboradores-da-net-on" title="Permanent link">#</a></h1>
 <h2 id="objetivo">Objetivo<a class="headerlink" href="#objetivo" title="Permanent link">#</a></h2>
-<p>O objetivo deste documento é documentar os requisitos, recursos de análise, arquitetura e desenvolvimento do Aplicativo
-de remoção de Veículos do Palácio dos Leilões.</p>
-<hr />
-<h2 id="etapas-do-projeto">Etapas do Projeto<a class="headerlink" href="#etapas-do-projeto" title="Permanent link">#</a></h2>
-<table>
-<thead>
-<tr>
-<th>Etapa</th>
-<th>Status</th>
-<th>Atividades</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Etapa 1</td>
-<td>Pendente</td>
-<td>Levantamento e análise de requisitos, prototipação e especificação projeto e da arquitetura <br> geral do aplicativo e suas integrações com sistemas externos</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="perfis-identificados">Perfis identificados<a class="headerlink" href="#perfis-identificados" title="Permanent link">#</a></h2>
-<table>
-<thead>
-<tr>
-<th>Perfil</th>
-<th>Função</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Motorista</td>
-<td>Perfil responsável por consultar veículos e criar rotas</td>
-</tr>
-</tbody>
-</table>
-<h2 id="api-de-integracao">API de integração<a class="headerlink" href="#api-de-integracao" title="Permanent link">#</a></h2>
-<h3 id="url-da-api">URL da API<a class="headerlink" href="#url-da-api" title="Permanent link">#</a></h3>
-<h3 id="metodo-de-requisicao-padrao">MÉTODO DE REQUISIÇÃO PADRÃO<a class="headerlink" href="#metodo-de-requisicao-padrao" title="Permanent link">#</a></h3>
-<p>Todos as requisições deverão ser feitas utilizando método POST</p>
-<h3 id="mensagem-de-retorno">MENSAGEM DE RETORNO<a class="headerlink" href="#mensagem-de-retorno" title="Permanent link">#</a></h3>
-<p>Todas as respostas devem ser no formato JSON com as seguintes propriedades</p>
-<table>
-<thead>
-<tr>
-<th>Propiedade</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>code</td>
-<td>código de retorno do webservice</td>
-</tr>
-<tr>
-<td>result</td>
-<td>conteudo da resposta</td>
-</tr>
-</tbody>
-</table>
-<h4 id="dicionario-de-dados-da-propriedade-code">DICIONÁRIO DE DADOS DA PROPRIEDADE CODE<a class="headerlink" href="#dicionario-de-dados-da-propriedade-code" title="Permanent link">#</a></h4>
-<table>
-<thead>
-<tr>
-<th>Valor</th>
-<th>Descrição</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>Método executado com sucesso e retornou o resultado</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Falha de conexão com o banco de dados</td>
-</tr>
-<tr>
-<td>3</td>
-<td>Método não encontrado</td>
-</tr>
-</tbody>
-</table>
-<h4 id="propriedade-result">PROPRIEDADE RESULT<a class="headerlink" href="#propriedade-result" title="Permanent link">#</a></h4>
-<p>O valor da propriedade result será especifico para método chamado</p>
-<h2 id="modelo-de-dados">Modelo de dados<a class="headerlink" href="#modelo-de-dados" title="Permanent link">#</a></h2>
-<p><img alt="Modelo de dados" src="./images/der.png" /></p>
+<p>O objetivo deste documento é agrupar materiais de estudo de assuntos necessários para a capacitação dos colaboradores
+da Net On.</p>
           <aside class="copyright" role="note">
             
               Copyright (c) 2016 Net On Soluções &ndash;
@@ -323,6 +223,31 @@ de remoção de Veículos do Palácio dos Leilões.</p>
           
             <footer class="footer">
               
+  <nav class="pagination" aria-label="Footer">
+    <div class="previous">
+      
+    </div>
+    <div class="next">
+      
+        <a href="guideprojectplanning/guide/" title="Guia para Gerenciamento de projetos">
+          <span class="direction">
+            Proximo
+          </span>
+          <div class="page">
+            <div class="stretch">
+              <div class="title">
+                Guia para Gerenciamento de projetos
+              </div>
+            </div>
+            <div class="button button-next" role="button" aria-label="Next">
+              <i class="icon icon-forward"></i>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+  </nav>
+
             </footer>
           
         </div>

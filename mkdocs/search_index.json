@@ -2,63 +2,58 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Especifica\u00e7\u00e3o Pal\u00e1cio Remo\u00e7\u00e3o - Aplicativo de Remo\u00e7\u00e3o de Ve\u00edculos do Pal\u00e1cio dos Leil\u00f5es\n#\n\n\nObjetivo\n#\n\n\nO objetivo deste documento \u00e9 documentar os requisitos, recursos de an\u00e1lise, arquitetura e desenvolvimento do Aplicativo\nde remo\u00e7\u00e3o de Ve\u00edculos do Pal\u00e1cio dos Leil\u00f5es.\n\n\n\n\nEtapas do Projeto\n#\n\n\n\n\n\n\n\n\nEtapa\n\n\nStatus\n\n\nAtividades\n\n\n\n\n\n\n\n\n\n\nEtapa 1\n\n\nPendente\n\n\nLevantamento e an\u00e1lise de requisitos, prototipa\u00e7\u00e3o e especifica\u00e7\u00e3o projeto e da arquitetura \n geral do aplicativo e suas integra\u00e7\u00f5es com sistemas externos\n\n\n\n\n\n\n\n\n\n\nPerfis identificados\n#\n\n\n\n\n\n\n\n\nPerfil\n\n\nFun\u00e7\u00e3o\n\n\n\n\n\n\n\n\n\n\nMotorista\n\n\nPerfil respons\u00e1vel por consultar ve\u00edculos e criar rotas\n\n\n\n\n\n\n\n\nAPI de integra\u00e7\u00e3o\n#\n\n\nURL da API\n#\n\n\nM\u00c9TODO DE REQUISI\u00c7\u00c3O PADR\u00c3O\n#\n\n\nTodos as requisi\u00e7\u00f5es dever\u00e3o ser feitas utilizando m\u00e9todo POST\n\n\nMENSAGEM DE RETORNO\n#\n\n\nTodas as respostas devem ser no formato JSON com as seguintes propriedades\n\n\n\n\n\n\n\n\nPropiedade\n\n\nDescri\u00e7\u00e3o\n\n\n\n\n\n\n\n\n\n\ncode\n\n\nc\u00f3digo de retorno do webservice\n\n\n\n\n\n\nresult\n\n\nconteudo da resposta\n\n\n\n\n\n\n\n\nDICION\u00c1RIO DE DADOS DA PROPRIEDADE CODE\n#\n\n\n\n\n\n\n\n\nValor\n\n\nDescri\u00e7\u00e3o\n\n\n\n\n\n\n\n\n\n\n1\n\n\nM\u00e9todo executado com sucesso e retornou o resultado\n\n\n\n\n\n\n2\n\n\nFalha de conex\u00e3o com o banco de dados\n\n\n\n\n\n\n3\n\n\nM\u00e9todo n\u00e3o encontrado\n\n\n\n\n\n\n\n\nPROPRIEDADE RESULT\n#\n\n\nO valor da propriedade result ser\u00e1 especifico para m\u00e9todo chamado\n\n\nModelo de dados\n#", 
+            "text": "Capacita\u00e7\u00e3o de Colaboradores da Net On\n#\n\n\nObjetivo\n#\n\n\nO objetivo deste documento \u00e9 agrupar materiais de estudo de assuntos necess\u00e1rios para a capacita\u00e7\u00e3o dos colaboradores\nda Net On.", 
             "title": "Introdu\u00e7\u00e3o"
         }, 
         {
-            "location": "/#especificacao-palacio-remocao-aplicativo-de-remocao-de-veiculos-do-palacio-dos-leiloes", 
+            "location": "/#capacitacao-de-colaboradores-da-net-on", 
             "text": "", 
-            "title": "Especifica\u00e7\u00e3o Pal\u00e1cio Remo\u00e7\u00e3o - Aplicativo de Remo\u00e7\u00e3o de Ve\u00edculos do Pal\u00e1cio dos Leil\u00f5es"
+            "title": "Capacita\u00e7\u00e3o de Colaboradores da Net On"
         }, 
         {
             "location": "/#objetivo", 
-            "text": "O objetivo deste documento \u00e9 documentar os requisitos, recursos de an\u00e1lise, arquitetura e desenvolvimento do Aplicativo\nde remo\u00e7\u00e3o de Ve\u00edculos do Pal\u00e1cio dos Leil\u00f5es.", 
+            "text": "O objetivo deste documento \u00e9 agrupar materiais de estudo de assuntos necess\u00e1rios para a capacita\u00e7\u00e3o dos colaboradores\nda Net On.", 
             "title": "Objetivo"
         }, 
         {
-            "location": "/#etapas-do-projeto", 
-            "text": "Etapa  Status  Atividades      Etapa 1  Pendente  Levantamento e an\u00e1lise de requisitos, prototipa\u00e7\u00e3o e especifica\u00e7\u00e3o projeto e da arquitetura   geral do aplicativo e suas integra\u00e7\u00f5es com sistemas externos", 
-            "title": "Etapas do Projeto"
+            "location": "/guideprojectplanning/guide/", 
+            "text": "Guia para Gerenciamento de Projetos\n#\n\n\n1. Sendo \u00e1gil\n#\n\n\nProcessos s\u00e3o tediosos como o inferno, mas se voc\u00ea n\u00e3o defin\u00ed-los bem, voc\u00ea ir\u00e1 desperdi\u00e7ar o seu tempo,\nperder deadlines, estourar or\u00e7amentos, enfurecer seus clientes, e nunca trabalhar novamente.\nFelizmente a maioria dos projetos digitais n\u00e3o requer processos elaborados. Simplesmente quebrar o trabalho em\npartes menores e rastrear o progresso \u00e9 tudo o que voc\u00ea precisa para alcan\u00e7ar um projeto de sucesso.\n\n\n1.1 Gerenciamento de projetos Cl\u00e1ssico vs Moderno\n#\n\n\nGerenciamento de projetos \u00e9 uma profiss\u00e3o muito antiga. Sen\u00e3o fosse assim, como os eg\u00edpicios poderiam construir\nas pir\u00e2medes se n\u00e3o houvesse um processo para gerenciar o trabalho?\n\n\nMas o gerenciamento de projetos n\u00e3o era visto como uma ci\u00eancia at\u00e9 1950. Foi quando as pessoas come\u00e7aram a escrever\nlivros sobre como organizar projetos e sistematicamente desenvolver e aplicar t\u00e9cnicas. Esses livros eram focados\nem projetos realmente complexos como construir um sistema de navega\u00e7\u00e3o para um m\u00edssil ou uma planta de usina el\u00e9trica -\nnada que voc\u00ea possa fazer em um m\u00eas ou um ano.\n\n\nPor isso a maioria das t\u00e9cnicas e frameworks pensados em universidades e escolas de neg\u00f3cio s\u00e3o realmente complexas\n(ex. PRINCE2, CPM, PERT, CPM). Mas eles n\u00e3o s\u00e3o feitos para voc\u00ea, porque eles falham quando se trata de projetos digitais\ncomo  construir um site, criar uma aplica\u00e7\u00e3o ou planjejar uma campanha de marketing.\n\n\nPor que eles n\u00e3o s\u00e3o ideais pra voc\u00ea? Porque produtos digitais s\u00e3o male\u00e1veis: eles podem facilmente ser mudados, ajustados,\ne melhorados.\n\n\nPor exemplo, uma vez que voc\u00ea constru\u00edu uma ponte, ela est\u00e1 pronta. Voc\u00ea n\u00e3o pode voltar atr\u00e1s, refatorar, melhorar\nincrementalmente, corrigir um erro, ou pivotar e mudar tudo. Voc\u00ea precisa planejar muito bem tudo \u00e0 frente, porque o\ncusto de fazer tudo de novo pode ser maior que o do projeto original.\n\n\nReprojetar um website, ou reescrever uma aplica\u00e7\u00e3o do zero tamb\u00e9m pode custar, mas n\u00e3o tanto quanto derrubar uma ponte\ne reconstru\u00ed-la. Al\u00e9m do mais, c\u00f3digo e projeto nunca est\u00e3o realmente finalizados. N\u00f3s precisamos atualizar e melhorar\nwebsites e aplica\u00e7\u00f5es dia ap\u00f3s dia apenas para mant\u00ea-los atualizados com as \u00faltimas tecnologias e tend\u00eancias.\n\n\n\n\n1.2 Como o \u00c1gil ajuda os projetos digitais\n#\n\n\n\n\n2. Gerente de projetos\n#\n\n\n\n\n3. Planejamento de projetos\n#\n\n\n\n\n4. Monitorando projeto\n#", 
+            "title": "Guia para Gerenciamento de projetos"
         }, 
         {
-            "location": "/#perfis-identificados", 
-            "text": "Perfil  Fun\u00e7\u00e3o      Motorista  Perfil respons\u00e1vel por consultar ve\u00edculos e criar rotas", 
-            "title": "Perfis identificados"
-        }, 
-        {
-            "location": "/#api-de-integracao", 
+            "location": "/guideprojectplanning/guide/#guia-para-gerenciamento-de-projetos", 
             "text": "", 
-            "title": "API de integra\u00e7\u00e3o"
+            "title": "Guia para Gerenciamento de Projetos"
         }, 
         {
-            "location": "/#url-da-api", 
+            "location": "/guideprojectplanning/guide/#1-sendo-agil", 
+            "text": "Processos s\u00e3o tediosos como o inferno, mas se voc\u00ea n\u00e3o defin\u00ed-los bem, voc\u00ea ir\u00e1 desperdi\u00e7ar o seu tempo,\nperder deadlines, estourar or\u00e7amentos, enfurecer seus clientes, e nunca trabalhar novamente.\nFelizmente a maioria dos projetos digitais n\u00e3o requer processos elaborados. Simplesmente quebrar o trabalho em\npartes menores e rastrear o progresso \u00e9 tudo o que voc\u00ea precisa para alcan\u00e7ar um projeto de sucesso.", 
+            "title": "1. Sendo \u00e1gil"
+        }, 
+        {
+            "location": "/guideprojectplanning/guide/#11-gerenciamento-de-projetos-classico-vs-moderno", 
+            "text": "Gerenciamento de projetos \u00e9 uma profiss\u00e3o muito antiga. Sen\u00e3o fosse assim, como os eg\u00edpicios poderiam construir\nas pir\u00e2medes se n\u00e3o houvesse um processo para gerenciar o trabalho?  Mas o gerenciamento de projetos n\u00e3o era visto como uma ci\u00eancia at\u00e9 1950. Foi quando as pessoas come\u00e7aram a escrever\nlivros sobre como organizar projetos e sistematicamente desenvolver e aplicar t\u00e9cnicas. Esses livros eram focados\nem projetos realmente complexos como construir um sistema de navega\u00e7\u00e3o para um m\u00edssil ou uma planta de usina el\u00e9trica -\nnada que voc\u00ea possa fazer em um m\u00eas ou um ano.  Por isso a maioria das t\u00e9cnicas e frameworks pensados em universidades e escolas de neg\u00f3cio s\u00e3o realmente complexas\n(ex. PRINCE2, CPM, PERT, CPM). Mas eles n\u00e3o s\u00e3o feitos para voc\u00ea, porque eles falham quando se trata de projetos digitais\ncomo  construir um site, criar uma aplica\u00e7\u00e3o ou planjejar uma campanha de marketing.  Por que eles n\u00e3o s\u00e3o ideais pra voc\u00ea? Porque produtos digitais s\u00e3o male\u00e1veis: eles podem facilmente ser mudados, ajustados,\ne melhorados.  Por exemplo, uma vez que voc\u00ea constru\u00edu uma ponte, ela est\u00e1 pronta. Voc\u00ea n\u00e3o pode voltar atr\u00e1s, refatorar, melhorar\nincrementalmente, corrigir um erro, ou pivotar e mudar tudo. Voc\u00ea precisa planejar muito bem tudo \u00e0 frente, porque o\ncusto de fazer tudo de novo pode ser maior que o do projeto original.  Reprojetar um website, ou reescrever uma aplica\u00e7\u00e3o do zero tamb\u00e9m pode custar, mas n\u00e3o tanto quanto derrubar uma ponte\ne reconstru\u00ed-la. Al\u00e9m do mais, c\u00f3digo e projeto nunca est\u00e3o realmente finalizados. N\u00f3s precisamos atualizar e melhorar\nwebsites e aplica\u00e7\u00f5es dia ap\u00f3s dia apenas para mant\u00ea-los atualizados com as \u00faltimas tecnologias e tend\u00eancias.", 
+            "title": "1.1 Gerenciamento de projetos Cl\u00e1ssico vs Moderno"
+        }, 
+        {
+            "location": "/guideprojectplanning/guide/#12-como-o-agil-ajuda-os-projetos-digitais", 
             "text": "", 
-            "title": "URL da API"
+            "title": "1.2 Como o \u00c1gil ajuda os projetos digitais"
         }, 
         {
-            "location": "/#metodo-de-requisicao-padrao", 
-            "text": "Todos as requisi\u00e7\u00f5es dever\u00e3o ser feitas utilizando m\u00e9todo POST", 
-            "title": "M\u00c9TODO DE REQUISI\u00c7\u00c3O PADR\u00c3O"
-        }, 
-        {
-            "location": "/#mensagem-de-retorno", 
-            "text": "Todas as respostas devem ser no formato JSON com as seguintes propriedades     Propiedade  Descri\u00e7\u00e3o      code  c\u00f3digo de retorno do webservice    result  conteudo da resposta", 
-            "title": "MENSAGEM DE RETORNO"
-        }, 
-        {
-            "location": "/#dicionario-de-dados-da-propriedade-code", 
-            "text": "Valor  Descri\u00e7\u00e3o      1  M\u00e9todo executado com sucesso e retornou o resultado    2  Falha de conex\u00e3o com o banco de dados    3  M\u00e9todo n\u00e3o encontrado", 
-            "title": "DICION\u00c1RIO DE DADOS DA PROPRIEDADE CODE"
-        }, 
-        {
-            "location": "/#propriedade-result", 
-            "text": "O valor da propriedade result ser\u00e1 especifico para m\u00e9todo chamado", 
-            "title": "PROPRIEDADE RESULT"
-        }, 
-        {
-            "location": "/#modelo-de-dados", 
+            "location": "/guideprojectplanning/guide/#2-gerente-de-projetos", 
             "text": "", 
-            "title": "Modelo de dados"
+            "title": "2. Gerente de projetos"
+        }, 
+        {
+            "location": "/guideprojectplanning/guide/#3-planejamento-de-projetos", 
+            "text": "", 
+            "title": "3. Planejamento de projetos"
+        }, 
+        {
+            "location": "/guideprojectplanning/guide/#4-monitorando-projeto", 
+            "text": "", 
+            "title": "4. Monitorando projeto"
         }
     ]
 }
