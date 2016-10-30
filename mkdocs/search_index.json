@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Capacita\u00e7\u00e3o de Colaboradores da Net On\n#\n\n\nObjetivo\n#\n\n\nO objetivo deste documento \u00e9 agrupar materiais de estudo de assuntos necess\u00e1rios para a capacita\u00e7\u00e3o dos colaboradores\nda Net On.", 
+            "text": "Capacita\u00e7\u00e3o de Colaboradores da Net On\n#\n\n\nObjetivo\n#\n\n\nO objetivo deste documento \u00e9 agrupar materiais de estudo de assuntos necess\u00e1rios para a capacita\u00e7\u00e3o dos colaboradores\nda Net On.\n\n\n\u00cdndice de assuntos\n#\n\n\n\n\n\n\n\n\nGuia\n\n\nAssuntos\n\n\nInteressados\n\n\n\n\n\n\n\n\n\n\nGuia para o gerenciamento de Projetos\n\n\nGerenciamento de Projetos\n\n\nGerente de Projeto\n\n\n\n\n\n\nPSR - PHP Standard Recomendations\n\n\nPrograma\u00e7\u00e3o, PHP\n\n\nAnalista de Sistemas, Programador", 
             "title": "Introdu\u00e7\u00e3o"
         }, 
         {
@@ -14,6 +14,11 @@
             "location": "/#objetivo", 
             "text": "O objetivo deste documento \u00e9 agrupar materiais de estudo de assuntos necess\u00e1rios para a capacita\u00e7\u00e3o dos colaboradores\nda Net On.", 
             "title": "Objetivo"
+        }, 
+        {
+            "location": "/#indice-de-assuntos", 
+            "text": "Guia  Assuntos  Interessados      Guia para o gerenciamento de Projetos  Gerenciamento de Projetos  Gerente de Projeto    PSR - PHP Standard Recomendations  Programa\u00e7\u00e3o, PHP  Analista de Sistemas, Programador", 
+            "title": "\u00cdndice de assuntos"
         }, 
         {
             "location": "/guideprojectplanning/guide/", 
@@ -54,6 +59,46 @@
             "location": "/guideprojectplanning/guide/#4-monitorando-projeto", 
             "text": "", 
             "title": "4. Monitorando projeto"
+        }, 
+        {
+            "location": "/psr/psr/", 
+            "text": "PSR - PHP Standard Recomendations\n#\n\n\nPSR 1 - Padr\u00e3o de codifica\u00e7\u00e3o B\u00e1sico\n#\n\n\nPSR 2 - Guia de Estilo de Codifica\u00e7\u00e3o\n#\n\n\nPSR 3 - Interface de Log\n#\n\n\nPSR 4 - Padr\u00e3o de autocarregamento\n#\n\n\nPSR 6 - Inteface de Cache\n#\n\n\nPSR 7 - Inteface de mensagem HTTP\n#", 
+            "title": "PSR"
+        }, 
+        {
+            "location": "/psr/psr/#psr-php-standard-recomendations", 
+            "text": "", 
+            "title": "PSR - PHP Standard Recomendations"
+        }, 
+        {
+            "location": "/psr/psr/#psr-1-padrao-de-codificacao-basico", 
+            "text": "", 
+            "title": "PSR 1 - Padr\u00e3o de codifica\u00e7\u00e3o B\u00e1sico"
+        }, 
+        {
+            "location": "/psr/psr/#psr-2-guia-de-estilo-de-codificacao", 
+            "text": "", 
+            "title": "PSR 2 - Guia de Estilo de Codifica\u00e7\u00e3o"
+        }, 
+        {
+            "location": "/psr/psr/#psr-3-interface-de-log", 
+            "text": "", 
+            "title": "PSR 3 - Interface de Log"
+        }, 
+        {
+            "location": "/psr/psr/#psr-4-padrao-de-autocarregamento", 
+            "text": "", 
+            "title": "PSR 4 - Padr\u00e3o de autocarregamento"
+        }, 
+        {
+            "location": "/psr/psr/#psr-6-inteface-de-cache", 
+            "text": "", 
+            "title": "PSR 6 - Inteface de Cache"
+        }, 
+        {
+            "location": "/psr/psr/#psr-7-inteface-de-mensagem-http", 
+            "text": "", 
+            "title": "PSR 7 - Inteface de mensagem HTTP"
         }
     ]
 }

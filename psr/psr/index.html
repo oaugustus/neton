@@ -9,19 +9,19 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     
       
-        <title>Guia para Gerenciamento de projetos - Capacitação Net On</title>
+        <title>PSR - Capacitação Net On</title>
       
       
       
-        <link rel="canonical" href="http://www.netonsolucoes.com.br/guideprojectplanning/guide/">
+        <link rel="canonical" href="http://www.netonsolucoes.com.br/psr/psr/">
       
       
         <meta name="author" content="Otávio Fernandes">
       
     
-    <meta property="og:url" content="http://www.netonsolucoes.com.br/guideprojectplanning/guide/">
+    <meta property="og:url" content="http://www.netonsolucoes.com.br/psr/psr/">
     <meta property="og:title" content="Capacitação Net On">
-    <meta property="og:image" content="http://www.netonsolucoes.com.br/guideprojectplanning/guide//../../images/logo.png">
+    <meta property="og:image" content="http://www.netonsolucoes.com.br/psr/psr//../../images/logo.png">
     <meta name="apple-mobile-web-app-title" content="Capacitação Net On">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -97,7 +97,7 @@
             
           </span>
         
-        Guia para Gerenciamento de projetos
+        PSR
       </div>
     </div>
     
@@ -161,8 +161,17 @@
           
             
   <li>
-    <a class="current" title="Guia para Gerenciamento de projetos" href="./">
+    <a class="" title="Guia para Gerenciamento de projetos" href="../../guideprojectplanning/guide/">
       Guia para Gerenciamento de projetos
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="current" title="PSR" href="./">
+      PSR
     </a>
     
       
@@ -172,40 +181,43 @@
         <ul>
           
             <li class="anchor">
-              <a title="1. Sendo ágil" href="#1-sendo-agil">
-                1. Sendo ágil
+              <a title="PSR 1 - Padrão de codificação Básico" href="#psr-1-padrao-de-codificacao-basico">
+                PSR 1 - Padrão de codificação Básico
               </a>
             </li>
           
             <li class="anchor">
-              <a title="2. Gerente de projetos" href="#2-gerente-de-projetos">
-                2. Gerente de projetos
+              <a title="PSR 2 - Guia de Estilo de Codificação" href="#psr-2-guia-de-estilo-de-codificacao">
+                PSR 2 - Guia de Estilo de Codificação
               </a>
             </li>
           
             <li class="anchor">
-              <a title="3. Planejamento de projetos" href="#3-planejamento-de-projetos">
-                3. Planejamento de projetos
+              <a title="PSR 3 - Interface de Log" href="#psr-3-interface-de-log">
+                PSR 3 - Interface de Log
               </a>
             </li>
           
             <li class="anchor">
-              <a title="4. Monitorando projeto" href="#4-monitorando-projeto">
-                4. Monitorando projeto
+              <a title="PSR 4 - Padrão de autocarregamento" href="#psr-4-padrao-de-autocarregamento">
+                PSR 4 - Padrão de autocarregamento
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="PSR 6 - Inteface de Cache" href="#psr-6-inteface-de-cache">
+                PSR 6 - Inteface de Cache
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="PSR 7 - Inteface de mensagem HTTP" href="#psr-7-inteface-de-mensagem-http">
+                PSR 7 - Inteface de mensagem HTTP
               </a>
             </li>
           
         </ul>
       
-    
-  </li>
-
-          
-            
-  <li>
-    <a class="" title="PSR" href="../../psr/psr/">
-      PSR
-    </a>
     
   </li>
 
@@ -234,38 +246,13 @@
       <article class="article">
         <div class="wrapper">
           
-          <h1 id="guia-para-gerenciamento-de-projetos">Guia para Gerenciamento de Projetos<a class="headerlink" href="#guia-para-gerenciamento-de-projetos" title="Permanent link">#</a></h1>
-<h2 id="1-sendo-agil">1. Sendo ágil<a class="headerlink" href="#1-sendo-agil" title="Permanent link">#</a></h2>
-<p>Processos são tediosos como o inferno, mas se você não definí-los bem, você irá desperdiçar o seu tempo,
-perder deadlines, estourar orçamentos, enfurecer seus clientes, e nunca trabalhar novamente.
-Felizmente a maioria dos projetos digitais não requer processos elaborados. Simplesmente quebrar o trabalho em
-partes menores e rastrear o progresso é tudo o que você precisa para alcançar um projeto de sucesso.</p>
-<h3 id="11-gerenciamento-de-projetos-classico-vs-moderno">1.1 Gerenciamento de projetos Clássico vs Moderno<a class="headerlink" href="#11-gerenciamento-de-projetos-classico-vs-moderno" title="Permanent link">#</a></h3>
-<p>Gerenciamento de projetos é uma profissão muito antiga. Senão fosse assim, como os egípicios poderiam construir
-as pirâmedes se não houvesse um processo para gerenciar o trabalho?</p>
-<p>Mas o gerenciamento de projetos não era visto como uma ciência até 1950. Foi quando as pessoas começaram a escrever
-livros sobre como organizar projetos e sistematicamente desenvolver e aplicar técnicas. Esses livros eram focados
-em projetos realmente complexos como construir um sistema de navegação para um míssil ou uma planta de usina elétrica -
-nada que você possa fazer em um mês ou um ano.</p>
-<p>Por isso a maioria das técnicas e frameworks pensados em universidades e escolas de negócio são realmente complexas
-(ex. PRINCE2, CPM, PERT, CPM). Mas eles não são feitos para você, porque eles falham quando se trata de projetos digitais
-como  construir um site, criar uma aplicação ou planjejar uma campanha de marketing.</p>
-<p>Por que eles não são ideais pra você? Porque produtos digitais são maleáveis: eles podem facilmente ser mudados, ajustados,
-e melhorados.</p>
-<p>Por exemplo, uma vez que você construíu uma ponte, ela está pronta. Você não pode voltar atrás, refatorar, melhorar
-incrementalmente, corrigir um erro, ou pivotar e mudar tudo. Você precisa planejar muito bem tudo à frente, porque o
-custo de fazer tudo de novo pode ser maior que o do projeto original.</p>
-<p>Reprojetar um website, ou reescrever uma aplicação do zero também pode custar, mas não tanto quanto derrubar uma ponte
-e reconstruí-la. Além do mais, código e projeto nunca estão realmente finalizados. Nós precisamos atualizar e melhorar
-websites e aplicações dia após dia apenas para mantê-los atualizados com as últimas tecnologias e tendências.</p>
-<hr />
-<h3 id="12-como-o-agil-ajuda-os-projetos-digitais">1.2 Como o Ágil ajuda os projetos digitais<a class="headerlink" href="#12-como-o-agil-ajuda-os-projetos-digitais" title="Permanent link">#</a></h3>
-<hr />
-<h2 id="2-gerente-de-projetos">2. Gerente de projetos<a class="headerlink" href="#2-gerente-de-projetos" title="Permanent link">#</a></h2>
-<hr />
-<h2 id="3-planejamento-de-projetos">3. Planejamento de projetos<a class="headerlink" href="#3-planejamento-de-projetos" title="Permanent link">#</a></h2>
-<hr />
-<h2 id="4-monitorando-projeto">4. Monitorando projeto<a class="headerlink" href="#4-monitorando-projeto" title="Permanent link">#</a></h2>
+          <h1 id="psr-php-standard-recomendations">PSR - PHP Standard Recomendations<a class="headerlink" href="#psr-php-standard-recomendations" title="Permanent link">#</a></h1>
+<h2 id="psr-1-padrao-de-codificacao-basico">PSR 1 - Padrão de codificação Básico<a class="headerlink" href="#psr-1-padrao-de-codificacao-basico" title="Permanent link">#</a></h2>
+<h2 id="psr-2-guia-de-estilo-de-codificacao">PSR 2 - Guia de Estilo de Codificação<a class="headerlink" href="#psr-2-guia-de-estilo-de-codificacao" title="Permanent link">#</a></h2>
+<h2 id="psr-3-interface-de-log">PSR 3 - Interface de Log<a class="headerlink" href="#psr-3-interface-de-log" title="Permanent link">#</a></h2>
+<h2 id="psr-4-padrao-de-autocarregamento">PSR 4 - Padrão de autocarregamento<a class="headerlink" href="#psr-4-padrao-de-autocarregamento" title="Permanent link">#</a></h2>
+<h2 id="psr-6-inteface-de-cache">PSR 6 - Inteface de Cache<a class="headerlink" href="#psr-6-inteface-de-cache" title="Permanent link">#</a></h2>
+<h2 id="psr-7-inteface-de-mensagem-http">PSR 7 - Inteface de mensagem HTTP<a class="headerlink" href="#psr-7-inteface-de-mensagem-http" title="Permanent link">#</a></h2>
           <aside class="copyright" role="note">
             
               Copyright (c) 2016 Net On Soluções &ndash;
@@ -279,7 +266,7 @@ websites e aplicações dia após dia apenas para mantê-los atualizados com as 
   <nav class="pagination" aria-label="Footer">
     <div class="previous">
       
-        <a href="../.." title="Introdução">
+        <a href="../../guideprojectplanning/guide/" title="Guia para Gerenciamento de projetos">
           <span class="direction">
             Voltar
           </span>
@@ -289,7 +276,7 @@ websites e aplicações dia após dia apenas para mantê-los atualizados com as 
             </div>
             <div class="stretch">
               <div class="title">
-                Introdução
+                Guia para Gerenciamento de projetos
               </div>
             </div>
           </div>
@@ -297,22 +284,6 @@ websites e aplicações dia após dia apenas para mantê-los atualizados com as 
       
     </div>
     <div class="next">
-      
-        <a href="../../psr/psr/" title="PSR">
-          <span class="direction">
-            Proximo
-          </span>
-          <div class="page">
-            <div class="stretch">
-              <div class="title">
-                PSR
-              </div>
-            </div>
-            <div class="button button-next" role="button" aria-label="Next">
-              <i class="icon icon-forward"></i>
-            </div>
-          </div>
-        </a>
       
     </div>
   </nav>
