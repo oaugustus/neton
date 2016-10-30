@@ -1,0 +1,64 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Especifica\u00e7\u00e3o Pal\u00e1cio Remo\u00e7\u00e3o - Aplicativo de Remo\u00e7\u00e3o de Ve\u00edculos do Pal\u00e1cio dos Leil\u00f5es\n#\n\n\nObjetivo\n#\n\n\nO objetivo deste documento \u00e9 documentar os requisitos, recursos de an\u00e1lise, arquitetura e desenvolvimento do Aplicativo\nde remo\u00e7\u00e3o de Ve\u00edculos do Pal\u00e1cio dos Leil\u00f5es.\n\n\n\n\nEtapas do Projeto\n#\n\n\n\n\n\n\n\n\nEtapa\n\n\nStatus\n\n\nAtividades\n\n\n\n\n\n\n\n\n\n\nEtapa 1\n\n\nPendente\n\n\nLevantamento e an\u00e1lise de requisitos, prototipa\u00e7\u00e3o e especifica\u00e7\u00e3o projeto e da arquitetura \n geral do aplicativo e suas integra\u00e7\u00f5es com sistemas externos\n\n\n\n\n\n\n\n\n\n\nPerfis identificados\n#\n\n\n\n\n\n\n\n\nPerfil\n\n\nFun\u00e7\u00e3o\n\n\n\n\n\n\n\n\n\n\nMotorista\n\n\nPerfil respons\u00e1vel por consultar ve\u00edculos e criar rotas\n\n\n\n\n\n\n\n\nAPI de integra\u00e7\u00e3o\n#\n\n\nURL da API\n#\n\n\nM\u00c9TODO DE REQUISI\u00c7\u00c3O PADR\u00c3O\n#\n\n\nTodos as requisi\u00e7\u00f5es dever\u00e3o ser feitas utilizando m\u00e9todo POST\n\n\nMENSAGEM DE RETORNO\n#\n\n\nTodas as respostas devem ser no formato JSON com as seguintes propriedades\n\n\n\n\n\n\n\n\nPropiedade\n\n\nDescri\u00e7\u00e3o\n\n\n\n\n\n\n\n\n\n\ncode\n\n\nc\u00f3digo de retorno do webservice\n\n\n\n\n\n\nresult\n\n\nconteudo da resposta\n\n\n\n\n\n\n\n\nDICION\u00c1RIO DE DADOS DA PROPRIEDADE CODE\n#\n\n\n\n\n\n\n\n\nValor\n\n\nDescri\u00e7\u00e3o\n\n\n\n\n\n\n\n\n\n\n1\n\n\nM\u00e9todo executado com sucesso e retornou o resultado\n\n\n\n\n\n\n2\n\n\nFalha de conex\u00e3o com o banco de dados\n\n\n\n\n\n\n3\n\n\nM\u00e9todo n\u00e3o encontrado\n\n\n\n\n\n\n\n\nPROPRIEDADE RESULT\n#\n\n\nO valor da propriedade result ser\u00e1 especifico para m\u00e9todo chamado\n\n\nModelo de dados\n#", 
+            "title": "Introdu\u00e7\u00e3o"
+        }, 
+        {
+            "location": "/#especificacao-palacio-remocao-aplicativo-de-remocao-de-veiculos-do-palacio-dos-leiloes", 
+            "text": "", 
+            "title": "Especifica\u00e7\u00e3o Pal\u00e1cio Remo\u00e7\u00e3o - Aplicativo de Remo\u00e7\u00e3o de Ve\u00edculos do Pal\u00e1cio dos Leil\u00f5es"
+        }, 
+        {
+            "location": "/#objetivo", 
+            "text": "O objetivo deste documento \u00e9 documentar os requisitos, recursos de an\u00e1lise, arquitetura e desenvolvimento do Aplicativo\nde remo\u00e7\u00e3o de Ve\u00edculos do Pal\u00e1cio dos Leil\u00f5es.", 
+            "title": "Objetivo"
+        }, 
+        {
+            "location": "/#etapas-do-projeto", 
+            "text": "Etapa  Status  Atividades      Etapa 1  Pendente  Levantamento e an\u00e1lise de requisitos, prototipa\u00e7\u00e3o e especifica\u00e7\u00e3o projeto e da arquitetura   geral do aplicativo e suas integra\u00e7\u00f5es com sistemas externos", 
+            "title": "Etapas do Projeto"
+        }, 
+        {
+            "location": "/#perfis-identificados", 
+            "text": "Perfil  Fun\u00e7\u00e3o      Motorista  Perfil respons\u00e1vel por consultar ve\u00edculos e criar rotas", 
+            "title": "Perfis identificados"
+        }, 
+        {
+            "location": "/#api-de-integracao", 
+            "text": "", 
+            "title": "API de integra\u00e7\u00e3o"
+        }, 
+        {
+            "location": "/#url-da-api", 
+            "text": "", 
+            "title": "URL da API"
+        }, 
+        {
+            "location": "/#metodo-de-requisicao-padrao", 
+            "text": "Todos as requisi\u00e7\u00f5es dever\u00e3o ser feitas utilizando m\u00e9todo POST", 
+            "title": "M\u00c9TODO DE REQUISI\u00c7\u00c3O PADR\u00c3O"
+        }, 
+        {
+            "location": "/#mensagem-de-retorno", 
+            "text": "Todas as respostas devem ser no formato JSON com as seguintes propriedades     Propiedade  Descri\u00e7\u00e3o      code  c\u00f3digo de retorno do webservice    result  conteudo da resposta", 
+            "title": "MENSAGEM DE RETORNO"
+        }, 
+        {
+            "location": "/#dicionario-de-dados-da-propriedade-code", 
+            "text": "Valor  Descri\u00e7\u00e3o      1  M\u00e9todo executado com sucesso e retornou o resultado    2  Falha de conex\u00e3o com o banco de dados    3  M\u00e9todo n\u00e3o encontrado", 
+            "title": "DICION\u00c1RIO DE DADOS DA PROPRIEDADE CODE"
+        }, 
+        {
+            "location": "/#propriedade-result", 
+            "text": "O valor da propriedade result ser\u00e1 especifico para m\u00e9todo chamado", 
+            "title": "PROPRIEDADE RESULT"
+        }, 
+        {
+            "location": "/#modelo-de-dados", 
+            "text": "", 
+            "title": "Modelo de dados"
+        }
+    ]
+}
