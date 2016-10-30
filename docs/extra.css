@@ -1,0 +1,17 @@
+.admonition.note {
+	background-color: #78909C !important;
+}
+
+.palette-primary-indigo .article h3 {
+    color: #1A237E;
+}
+
+.palette-primary-indigo .article h4 {
+    color: #1A237E;
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+.note a{
+	color: #fff !important;
+}

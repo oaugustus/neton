@@ -1,0 +1,48 @@
+# Informações do projeto
+site_name: Capacitação Net On
+site_description: Documentos de capacitação para os colaboradores da Net On
+site_author: Otávio Fernandes
+site_url: http://www.netonsolucoes.com.br/
+extra_css: [extra.css]
+
+
+# Copyright
+copyright: Copyright (c) 2016 Net On Soluções
+
+# Documentação de tema
+theme_dir: material
+
+# Opções
+extra:
+  version: 1.0
+  logo: images/logo.png
+  i18n:
+    prev: 'Voltar'
+    next: 'Proximo'
+  palette:
+    primary: 'orange'
+  author:
+    github: oaugustus
+
+# Extensões
+markdown_extensions:
+  - codehilite(css_class=code)
+  - admonition
+  - toc:
+      permalink: '#'
+
+# Árvore de páginas
+pages:
+  - Introdução: 'index.md'
+  - Guia para Gerenciamento de projetos: 'guideprojectplanning/guide.md'
+  - PSR: 'psr/psr.md'
+#  - Dashboard: 'dashboard.md'
+#  - Projetos > Orçamentos: 'projeto/orcamento/orcamento.md'
+#  - Cadastrar > Clientes: 'cadastro/cliente/cliente.md'
+#  - Cadastrar > Contratos: 'cadastro/contrato/contrato.md'
+#  - Cadastrar > Filiais: 'cadastro/filial/filial.md'
+#  - Cadastrar > Itens de LPU: 'cadastro/lpu/lpu.md'
+#  - Administração > Usuários: 'administracao/usuario/usuario.md'
+#  - Funcionalidade > Importar Itens de LPU: 'funcionalidade/lpu.md'
+#  - Funcionalidade > Gerenciar grupos de Itens de LPU: 'funcionalidade/grupo.md'
+#  - Funcionalidade > Gerenciar subgrupos de Itens de LPU: 'funcionalidade/subgrupo.md'
