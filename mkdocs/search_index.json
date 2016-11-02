@@ -2,13 +2,13 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Capacita\u00e7\u00e3o de Colaboradores da Net On\n#\n\n\nObjetivo\n#\n\n\nO objetivo deste documento \u00e9 agrupar materiais de estudo de assuntos necess\u00e1rios para a capacita\u00e7\u00e3o dos colaboradores\nda Net On.\n\n\n\u00cdndice de assuntos\n#\n\n\n\n\n\n\n\n\nGuia\n\n\nAssuntos\n\n\nInteressados\n\n\n\n\n\n\n\n\n\n\nGuia para o gerenciamento de Projetos\n\n\nGerenciamento de Projetos\n\n\nGerente de Projeto\n\n\n\n\n\n\nPSR - PHP Standard Recomendations\n\n\nPrograma\u00e7\u00e3o, PHP\n\n\nAnalista de Sistemas, Programador", 
+            "text": "Biblioteca de Conte\u00fados para a Capacita\u00e7\u00e3o de Colaboradores da Net On\n#\n\n\nObjetivo\n#\n\n\nO objetivo deste documento \u00e9 agrupar materiais de estudo de assuntos necess\u00e1rios para a capacita\u00e7\u00e3o dos colaboradores\nda Net On.\n\n\n\u00cdndice de assuntos\n#\n\n\n\n\n\n\n\n\nGuia\n\n\nAssuntos\n\n\nInteressados\n\n\n\n\n\n\n\n\n\n\nGuia para o gerenciamento de Projetos\n\n\nGerenciamento de Projetos\n\n\nGerente de Projeto\n\n\n\n\n\n\nPSR - PHP Standard Recomendations\n\n\nPrograma\u00e7\u00e3o, PHP\n\n\nAnalista de Sistemas, Programador", 
             "title": "Introdu\u00e7\u00e3o"
         }, 
         {
-            "location": "/#capacitacao-de-colaboradores-da-net-on", 
+            "location": "/#biblioteca-de-conteudos-para-a-capacitacao-de-colaboradores-da-net-on", 
             "text": "", 
-            "title": "Capacita\u00e7\u00e3o de Colaboradores da Net On"
+            "title": "Biblioteca de Conte\u00fados para a Capacita\u00e7\u00e3o de Colaboradores da Net On"
         }, 
         {
             "location": "/#objetivo", 
@@ -62,7 +62,7 @@
         }, 
         {
             "location": "/psr/psr/", 
-            "text": "PSR - PHP Standard Recomendations\n#\n\n\nPSR 1 - Padr\u00e3o de codifica\u00e7\u00e3o B\u00e1sico\n#\n\n\nPSR 2 - Guia de Estilo de Codifica\u00e7\u00e3o\n#\n\n\nPSR 3 - Interface de Log\n#\n\n\nPSR 4 - Padr\u00e3o de autocarregamento\n#\n\n\nPSR 6 - Inteface de Cache\n#\n\n\nPSR 7 - Inteface de mensagem HTTP\n#", 
+            "text": "PSR - PHP Standard Recomendations\n#\n\n\nPSR 1 - Padr\u00e3o de codifica\u00e7\u00e3o B\u00e1sico\n#\n\n\nEsta se\u00e7\u00e3o do padr\u00e3o compreende o que deve ser considerado padr\u00e3o de elementos de c\u00f3digo que\ns\u00e3o necess\u00e1rios para garantir um alto n\u00edvel de interoperabilidade t\u00e9cnica entre c\u00f3digo PHP\ncompartilhado.\n\n\n1. VIS\u00c3O GERAL\n#\n\n\n\n\n\n\nArquivos \nDEVEM\n usar apenas tags \n?php\n e \n?=\n;\n\n\n\n\n\n\nArquivos \nDEVEM\n usar apenas \nUTF-8\n sem \nBOM\n para o c\u00f3digo PHP;\n\n\n\n\n\n\nArquivos \nDEVERIAM\n declarar ou s\u00edmbolos (classes, fun\u00e7\u00f5es, constantes, etc) ou causar efeitos\ncolaterais (ex. gerar sa\u00edda, modificar confirma\u00e7\u00f5es do php.ini, etc) mas \nN\u00c3O DEVERIAM\n fazer\nambos;\n\n\n\n\n\n\nNamespaces e classes \nDEVEM\n seguir o padr\u00e3o de autoloading [PSR4];\n\n\n\n\n\n\nNomes de classes \nDEVEM\n ser declarados em \nStudlyCaps\n;\n\n\n\n\n\n\n    // nome de classe v\u00e1lido\n    class ActiveDirectory\n    {\n    }\n\n    // nome de classe inv\u00e1lido\n    class activeDirectory\n    {\n    }\n\n    // nome de classe inv\u00e1lido\n    class Active_Directory\n    {\n    }\n\n\n\n\n\n\nConstantes de classes \nDEVEM\n ser declaradas em \nupper case\n com separadores \nunderscore\n;\n\n\n\n\n    class ActiveDirectory\n    {\n        // constante v\u00e1lida\n        const SERVER_ADDRESS = '192.168.0.1';\n\n        // constante inv\u00e1lida\n        const serverAddress = '...';\n\n        // constante inv\u00e1lida\n        const server_address = '...';\n    }\n\n\n\n\n\n\nNomes de m\u00e9todos devem ser declarados em \ncamelCase\n;\n\n\n\n\n    class ActiveDirectory\n    {\n        // nome de m\u00e9todo v\u00e1lido\n        public function connectAgain(){}\n\n        // nome de m\u00e9todo inv\u00e1lido\n        public function ConnectAgain(){}\n\n        // nome de m\u00e9todo inv\u00e1lido\n        public function Connect_Again(){}\n    }\n\n\n\n\n2. ARQUIVOS\n#\n\n\n2.1 Tags PHP\n#\n\n\nC\u00f3digo PHP \nDEVE\n usar tags completas \n?php ?\n ou as tags simplificadas \n?= ?\n; ele\n\nN\u00c3O DEVE\n usar outras varia\u00e7\u00f5es de tags.\n\n\n2.2 Codifica\u00e7\u00e3o de caracteres\n#\n\n\nC\u00f3digo PHP \nDEVE\n usar apenas caracteres \nUTF-8\n sem \nBOM\n.\n\n\n2.3 Efeitos Colaterais\n#\n\n\nUm arquivo \nDEVERIA\n declarar novos s\u00edmbolos (classes, fun\u00e7\u00f5es, constantes, etc.) e n\u00e3o causar\noutro efeito colateral, ou ele \nDEVERIA\n executar l\u00f3gica com efeitos colaterais, mas\n\nN\u00c3O DEVERIA\n realizar ambos.\n\n\nA frase \n\"efeitos colaterais\"\n significa a execu\u00e7\u00e3o de l\u00f3gica n\u00e3o diretamente relacionada \u00e0\ndeclara\u00e7\u00e3o de classes, fun\u00e7\u00f5es, constantes, etc., meramente a partir da inclus\u00e3o do arquivo.\n\n\n\"Efeitos colaterais\"\n incluem mas n\u00e3o se limitam h\u00e1: gerar sa\u00edda, explicitamente usar \ninclude\n\nou \nrequire\n, conectar a servi\u00e7os externos, modificar configura\u00e7\u00f5es do \nphp.ini\n, emitir erros\nou exce\u00e7\u00f5es, modificar vari\u00e1veis est\u00e1ticas ou globais, ler ou escrever em um arquivo, etc.\n\n\nOs seguintes exemplos mostram um arquivo com ambas as declare\u00e7\u00f5es e efeitos colaterais; i.e, um\nexemplo do que evitar:\n\n\n    // efeito colateral: modificar configura\u00e7\u00f5es do php.ini\n    ini_set('error_reporting', E_ALL);\n\n    // efeito colateral: carregar um arquivo\n    include \nfile.php\n;\n\n    // efeito colateral: gerar uma sa\u00edda\n    echo \nhtml\n\\n\n;\n\n    // declara\u00e7\u00e3o\n    function foo()\n    {\n        // corpo da fun\u00e7\u00e3o\n    }\n\n\n\n\nA seguir um exemplo de um arquivo que cont\u00e9m declara\u00e7\u00f5es sem efeitos colaterais; i.e., um exemplo\ndo que fazer:\n\n\n?php\n// declara\u00e7\u00e3o\nfunction foo()\n{\n    // corpo da fun\u00e7\u00e3o\n}\n\n// declara\u00e7\u00e3o condicional *n\u00e3o* \u00e9 efeito lateral\nif (! function_exists('bar')) {\n\n    function bar()\n    {\n        // corpo da fun\u00e7\u00e3o\n    }\n}\n\n\n\n\n3. Namespace e nomes de classes\n#\n\n\nNamespaces e classes \nDEVEM\n seguir um padr\u00e3o de autoloading PSR: [PSR-0, PSR-4].\n\n\nIsto siginifica que cada classe est\u00e1 em um arquivo pr\u00f3prio, e est\u00e1 num namespace de ao menos um\nn\u00edvel: o n\u00edvel superior do nome do distribuidor.\n\n\nNomes de classes \nDEVEM\n ser declarados no formato \nStudlyCaps\n.\n\n\nC\u00f3digos escritos para PHP 5.3 e superior \nDEVEM\n usar namespaces formais.\n\n\nPor exemplo:\n\n\n?php\n// PHP 5.3 ou superior\nnamespace Vendor\\Model;\n\nClass Foo\n{\n\n}\n\n\n\n\nC\u00f3digos escritos para PHP 5.2.x e anterior \nDEVERIAM\n usar uma conven\u00e7\u00e3o de de pseudo-namespaces\nde \n\"Vendor_\"\n nos nomes das classes:\n\n\n?php\n// PHP 5.2.x ou anterior\nclass Vendor_Model_Foo\n{\n\n}\n\n\n\n\n4. Constantes de classes, Propriedades e M\u00e9todos\n#\n\n\nO Termo \"classe\" se refere a todas as classes, interfaces e tra\u00e7os.\n\n\n4.1 Constantes\n#\n\n\nConstantes de classes \nDEVEM\n ser declaradas todas em \nUPPER CASE\n com separadores underscore.\nPor exemplo:\n\n\n?php\n\nnamespace Vendor\\Model;\n\nclass Foo\n{\n    const VERSION = '1.0';\n    const DATE_APPROVED = '2012-06-01';\n}\n\n\n\n\n4.2 Propriedades\n#\n\n\nEste guia intencionamento evita qualquer recomenda\u00e7\u00e3o a cerca do uso de nomes de propriedades\n\n$StudlyCaps\n, \n$camelCase\n, ou \n$under_score\n.\n\n\nQualquer conven\u00e7\u00e3o de nome que for usada \nDEVERIA\n ser aplicada consistentemente dentro de um\nescopo razo\u00e1vel. Este escopo pode ser o n\u00edvel do distribuidor, o n\u00edvel do pacote, o n\u00edvel da classe,\nou o escopo do m\u00e9todo.\n\n\n4.3 M\u00e9todos\n#\n\n\nNomes de m\u00e9todos \nDEVEM\n ser declarados em \ncamelCase()\n.\n\n\nPSR 2 - Guia de Estilo de Codifica\u00e7\u00e3o\n#\n\n\nPSR 3 - Interface de Log\n#\n\n\nPSR 4 - Padr\u00e3o de autocarregamento\n#\n\n\nPSR 6 - Inteface de Cache\n#\n\n\nPSR 7 - Inteface de mensagem HTTP\n#", 
             "title": "PSR"
         }, 
         {
@@ -72,8 +72,58 @@
         }, 
         {
             "location": "/psr/psr/#psr-1-padrao-de-codificacao-basico", 
-            "text": "", 
+            "text": "Esta se\u00e7\u00e3o do padr\u00e3o compreende o que deve ser considerado padr\u00e3o de elementos de c\u00f3digo que\ns\u00e3o necess\u00e1rios para garantir um alto n\u00edvel de interoperabilidade t\u00e9cnica entre c\u00f3digo PHP\ncompartilhado.", 
             "title": "PSR 1 - Padr\u00e3o de codifica\u00e7\u00e3o B\u00e1sico"
+        }, 
+        {
+            "location": "/psr/psr/#1-visao-geral", 
+            "text": "Arquivos  DEVEM  usar apenas tags  ?php  e  ?= ;    Arquivos  DEVEM  usar apenas  UTF-8  sem  BOM  para o c\u00f3digo PHP;    Arquivos  DEVERIAM  declarar ou s\u00edmbolos (classes, fun\u00e7\u00f5es, constantes, etc) ou causar efeitos\ncolaterais (ex. gerar sa\u00edda, modificar confirma\u00e7\u00f5es do php.ini, etc) mas  N\u00c3O DEVERIAM  fazer\nambos;    Namespaces e classes  DEVEM  seguir o padr\u00e3o de autoloading [PSR4];    Nomes de classes  DEVEM  ser declarados em  StudlyCaps ;        // nome de classe v\u00e1lido\n    class ActiveDirectory\n    {\n    }\n\n    // nome de classe inv\u00e1lido\n    class activeDirectory\n    {\n    }\n\n    // nome de classe inv\u00e1lido\n    class Active_Directory\n    {\n    }   Constantes de classes  DEVEM  ser declaradas em  upper case  com separadores  underscore ;       class ActiveDirectory\n    {\n        // constante v\u00e1lida\n        const SERVER_ADDRESS = '192.168.0.1';\n\n        // constante inv\u00e1lida\n        const serverAddress = '...';\n\n        // constante inv\u00e1lida\n        const server_address = '...';\n    }   Nomes de m\u00e9todos devem ser declarados em  camelCase ;       class ActiveDirectory\n    {\n        // nome de m\u00e9todo v\u00e1lido\n        public function connectAgain(){}\n\n        // nome de m\u00e9todo inv\u00e1lido\n        public function ConnectAgain(){}\n\n        // nome de m\u00e9todo inv\u00e1lido\n        public function Connect_Again(){}\n    }", 
+            "title": "1. VIS\u00c3O GERAL"
+        }, 
+        {
+            "location": "/psr/psr/#2-arquivos", 
+            "text": "", 
+            "title": "2. ARQUIVOS"
+        }, 
+        {
+            "location": "/psr/psr/#21-tags-php", 
+            "text": "C\u00f3digo PHP  DEVE  usar tags completas  ?php ?  ou as tags simplificadas  ?= ? ; ele N\u00c3O DEVE  usar outras varia\u00e7\u00f5es de tags.", 
+            "title": "2.1 Tags PHP"
+        }, 
+        {
+            "location": "/psr/psr/#22-codificacao-de-caracteres", 
+            "text": "C\u00f3digo PHP  DEVE  usar apenas caracteres  UTF-8  sem  BOM .", 
+            "title": "2.2 Codifica\u00e7\u00e3o de caracteres"
+        }, 
+        {
+            "location": "/psr/psr/#23-efeitos-colaterais", 
+            "text": "Um arquivo  DEVERIA  declarar novos s\u00edmbolos (classes, fun\u00e7\u00f5es, constantes, etc.) e n\u00e3o causar\noutro efeito colateral, ou ele  DEVERIA  executar l\u00f3gica com efeitos colaterais, mas N\u00c3O DEVERIA  realizar ambos.  A frase  \"efeitos colaterais\"  significa a execu\u00e7\u00e3o de l\u00f3gica n\u00e3o diretamente relacionada \u00e0\ndeclara\u00e7\u00e3o de classes, fun\u00e7\u00f5es, constantes, etc., meramente a partir da inclus\u00e3o do arquivo.  \"Efeitos colaterais\"  incluem mas n\u00e3o se limitam h\u00e1: gerar sa\u00edda, explicitamente usar  include \nou  require , conectar a servi\u00e7os externos, modificar configura\u00e7\u00f5es do  php.ini , emitir erros\nou exce\u00e7\u00f5es, modificar vari\u00e1veis est\u00e1ticas ou globais, ler ou escrever em um arquivo, etc.  Os seguintes exemplos mostram um arquivo com ambas as declare\u00e7\u00f5es e efeitos colaterais; i.e, um\nexemplo do que evitar:      // efeito colateral: modificar configura\u00e7\u00f5es do php.ini\n    ini_set('error_reporting', E_ALL);\n\n    // efeito colateral: carregar um arquivo\n    include  file.php ;\n\n    // efeito colateral: gerar uma sa\u00edda\n    echo  html \\n ;\n\n    // declara\u00e7\u00e3o\n    function foo()\n    {\n        // corpo da fun\u00e7\u00e3o\n    }  A seguir um exemplo de um arquivo que cont\u00e9m declara\u00e7\u00f5es sem efeitos colaterais; i.e., um exemplo\ndo que fazer:  ?php\n// declara\u00e7\u00e3o\nfunction foo()\n{\n    // corpo da fun\u00e7\u00e3o\n}\n\n// declara\u00e7\u00e3o condicional *n\u00e3o* \u00e9 efeito lateral\nif (! function_exists('bar')) {\n\n    function bar()\n    {\n        // corpo da fun\u00e7\u00e3o\n    }\n}", 
+            "title": "2.3 Efeitos Colaterais"
+        }, 
+        {
+            "location": "/psr/psr/#3-namespace-e-nomes-de-classes", 
+            "text": "Namespaces e classes  DEVEM  seguir um padr\u00e3o de autoloading PSR: [PSR-0, PSR-4].  Isto siginifica que cada classe est\u00e1 em um arquivo pr\u00f3prio, e est\u00e1 num namespace de ao menos um\nn\u00edvel: o n\u00edvel superior do nome do distribuidor.  Nomes de classes  DEVEM  ser declarados no formato  StudlyCaps .  C\u00f3digos escritos para PHP 5.3 e superior  DEVEM  usar namespaces formais.  Por exemplo:  ?php\n// PHP 5.3 ou superior\nnamespace Vendor\\Model;\n\nClass Foo\n{\n\n}  C\u00f3digos escritos para PHP 5.2.x e anterior  DEVERIAM  usar uma conven\u00e7\u00e3o de de pseudo-namespaces\nde  \"Vendor_\"  nos nomes das classes:  ?php\n// PHP 5.2.x ou anterior\nclass Vendor_Model_Foo\n{\n\n}", 
+            "title": "3. Namespace e nomes de classes"
+        }, 
+        {
+            "location": "/psr/psr/#4-constantes-de-classes-propriedades-e-metodos", 
+            "text": "O Termo \"classe\" se refere a todas as classes, interfaces e tra\u00e7os.", 
+            "title": "4. Constantes de classes, Propriedades e M\u00e9todos"
+        }, 
+        {
+            "location": "/psr/psr/#41-constantes", 
+            "text": "Constantes de classes  DEVEM  ser declaradas todas em  UPPER CASE  com separadores underscore.\nPor exemplo:  ?php\n\nnamespace Vendor\\Model;\n\nclass Foo\n{\n    const VERSION = '1.0';\n    const DATE_APPROVED = '2012-06-01';\n}", 
+            "title": "4.1 Constantes"
+        }, 
+        {
+            "location": "/psr/psr/#42-propriedades", 
+            "text": "Este guia intencionamento evita qualquer recomenda\u00e7\u00e3o a cerca do uso de nomes de propriedades $StudlyCaps ,  $camelCase , ou  $under_score .  Qualquer conven\u00e7\u00e3o de nome que for usada  DEVERIA  ser aplicada consistentemente dentro de um\nescopo razo\u00e1vel. Este escopo pode ser o n\u00edvel do distribuidor, o n\u00edvel do pacote, o n\u00edvel da classe,\nou o escopo do m\u00e9todo.", 
+            "title": "4.2 Propriedades"
+        }, 
+        {
+            "location": "/psr/psr/#43-metodos", 
+            "text": "Nomes de m\u00e9todos  DEVEM  ser declarados em  camelCase() .", 
+            "title": "4.3 M\u00e9todos"
         }, 
         {
             "location": "/psr/psr/#psr-2-guia-de-estilo-de-codificacao", 

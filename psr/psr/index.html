@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     
       
-        <title>PSR - Capacitação Net On</title>
+        <title>PSR - Biblioteca Net On</title>
       
       
       
@@ -20,9 +20,9 @@
       
     
     <meta property="og:url" content="http://www.netonsolucoes.com.br/psr/psr/">
-    <meta property="og:title" content="Capacitação Net On">
+    <meta property="og:title" content="Biblioteca Net On">
     <meta property="og:image" content="http://www.netonsolucoes.com.br/psr/psr//../../images/logo.png">
-    <meta name="apple-mobile-web-app-title" content="Capacitação Net On">
+    <meta name="apple-mobile-web-app-title" content="Biblioteca Net On">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     
@@ -139,7 +139,7 @@
         </div>
       
       <div class="name">
-        <strong>Capacitação Net On 1.0</strong>
+        <strong>Biblioteca Net On 1.0</strong>
         
       </div>
     </div>
@@ -248,6 +248,180 @@
           
           <h1 id="psr-php-standard-recomendations">PSR - PHP Standard Recomendations<a class="headerlink" href="#psr-php-standard-recomendations" title="Permanent link">#</a></h1>
 <h2 id="psr-1-padrao-de-codificacao-basico">PSR 1 - Padrão de codificação Básico<a class="headerlink" href="#psr-1-padrao-de-codificacao-basico" title="Permanent link">#</a></h2>
+<p>Esta seção do padrão compreende o que deve ser considerado padrão de elementos de código que
+são necessários para garantir um alto nível de interoperabilidade técnica entre código PHP
+compartilhado.</p>
+<h3 id="1-visao-geral">1. VISÃO GERAL<a class="headerlink" href="#1-visao-geral" title="Permanent link">#</a></h3>
+<ul>
+<li>
+<p>Arquivos <strong>DEVEM</strong> usar apenas tags <strong>&lt;?php</strong> e <strong>&lt;?=</strong>;</p>
+</li>
+<li>
+<p>Arquivos <strong>DEVEM</strong> usar apenas <strong>UTF-8</strong> sem <strong>BOM</strong> para o código PHP;</p>
+</li>
+<li>
+<p>Arquivos <strong>DEVERIAM</strong> declarar ou símbolos (classes, funções, constantes, etc) ou causar efeitos
+colaterais (ex. gerar saída, modificar confirmações do php.ini, etc) mas <strong>NÃO DEVERIAM</strong> fazer
+ambos;</p>
+</li>
+<li>
+<p>Namespaces e classes <strong>DEVEM</strong> seguir o padrão de autoloading [PSR4];</p>
+</li>
+<li>
+<p>Nomes de classes <strong>DEVEM</strong> ser declarados em <em>StudlyCaps</em>;</p>
+</li>
+</ul>
+<pre class="code"><code class="language-php">    // nome de classe válido
+    class ActiveDirectory
+    {
+    }
+
+    // nome de classe inválido
+    class activeDirectory
+    {
+    }
+
+    // nome de classe inválido
+    class Active_Directory
+    {
+    }</code></pre>
+
+
+<ul>
+<li>Constantes de classes <strong>DEVEM</strong> ser declaradas em <em>upper case</em> com separadores <strong>underscore</strong>;</li>
+</ul>
+<pre class="code"><code class="language-php">    class ActiveDirectory
+    {
+        // constante válida
+        const SERVER_ADDRESS = '192.168.0.1';
+
+        // constante inválida
+        const serverAddress = '...';
+
+        // constante inválida
+        const server_address = '...';
+    }</code></pre>
+
+
+<ul>
+<li>Nomes de métodos devem ser declarados em <em>camelCase</em>;</li>
+</ul>
+<pre class="code"><code class="language-php">    class ActiveDirectory
+    {
+        // nome de método válido
+        public function connectAgain(){}
+
+        // nome de método inválido
+        public function ConnectAgain(){}
+
+        // nome de método inválido
+        public function Connect_Again(){}
+    }</code></pre>
+
+
+<h3 id="2-arquivos">2. ARQUIVOS<a class="headerlink" href="#2-arquivos" title="Permanent link">#</a></h3>
+<h4 id="21-tags-php">2.1 Tags PHP<a class="headerlink" href="#21-tags-php" title="Permanent link">#</a></h4>
+<p>Código PHP <strong>DEVE</strong> usar tags completas <strong>&lt;?php ?&gt;</strong> ou as tags simplificadas <strong>&lt;?= ?&gt;</strong>; ele
+<strong>NÃO DEVE</strong> usar outras variações de tags.</p>
+<h4 id="22-codificacao-de-caracteres">2.2 Codificação de caracteres<a class="headerlink" href="#22-codificacao-de-caracteres" title="Permanent link">#</a></h4>
+<p>Código PHP <strong>DEVE</strong> usar apenas caracteres <strong>UTF-8</strong> sem <strong>BOM</strong>.</p>
+<h4 id="23-efeitos-colaterais">2.3 Efeitos Colaterais<a class="headerlink" href="#23-efeitos-colaterais" title="Permanent link">#</a></h4>
+<p>Um arquivo <strong>DEVERIA</strong> declarar novos símbolos (classes, funções, constantes, etc.) e não causar
+outro efeito colateral, ou ele <strong>DEVERIA</strong> executar lógica com efeitos colaterais, mas
+<strong>NÃO DEVERIA</strong> realizar ambos.</p>
+<p>A frase <strong>"efeitos colaterais"</strong> significa a execução de lógica não diretamente relacionada à
+declaração de classes, funções, constantes, etc., meramente a partir da inclusão do arquivo.</p>
+<p><strong>"Efeitos colaterais"</strong> incluem mas não se limitam há: gerar saída, explicitamente usar <strong>include</strong>
+ou <strong>require</strong>, conectar a serviços externos, modificar configurações do <strong>php.ini</strong>, emitir erros
+ou exceções, modificar variáveis estáticas ou globais, ler ou escrever em um arquivo, etc.</p>
+<p>Os seguintes exemplos mostram um arquivo com ambas as declareções e efeitos colaterais; i.e, um
+exemplo do que evitar:</p>
+<pre class="code"><code class="language-php">    // efeito colateral: modificar configurações do php.ini
+    ini_set('error_reporting', E_ALL);
+
+    // efeito colateral: carregar um arquivo
+    include &quot;file.php&quot;;
+
+    // efeito colateral: gerar uma saída
+    echo &quot;&lt;html&gt;\n&quot;;
+
+    // declaração
+    function foo()
+    {
+        // corpo da função
+    }</code></pre>
+
+
+<p>A seguir um exemplo de um arquivo que contém declarações sem efeitos colaterais; i.e., um exemplo
+do que fazer:</p>
+<pre class="code"><code class="language-php">&lt;?php
+// declaração
+function foo()
+{
+    // corpo da função
+}
+
+// declaração condicional *não* é efeito lateral
+if (! function_exists('bar')) {
+
+    function bar()
+    {
+        // corpo da função
+    }
+}</code></pre>
+
+
+<h3 id="3-namespace-e-nomes-de-classes">3. Namespace e nomes de classes<a class="headerlink" href="#3-namespace-e-nomes-de-classes" title="Permanent link">#</a></h3>
+<p>Namespaces e classes <strong>DEVEM</strong> seguir um padrão de autoloading PSR: [PSR-0, PSR-4].</p>
+<p>Isto siginifica que cada classe está em um arquivo próprio, e está num namespace de ao menos um
+nível: o nível superior do nome do distribuidor.</p>
+<p>Nomes de classes <strong>DEVEM</strong> ser declarados no formato <em>StudlyCaps</em>.</p>
+<p>Códigos escritos para PHP 5.3 e superior <strong>DEVEM</strong> usar namespaces formais.</p>
+<p>Por exemplo:</p>
+<pre class="code"><code class="language-php">&lt;?php
+// PHP 5.3 ou superior
+namespace Vendor\Model;
+
+Class Foo
+{
+
+}</code></pre>
+
+
+<p>Códigos escritos para PHP 5.2.x e anterior <strong>DEVERIAM</strong> usar uma convenção de de pseudo-namespaces
+de <strong>"Vendor_"</strong> nos nomes das classes:</p>
+<pre class="code"><code class="language-php">&lt;?php
+// PHP 5.2.x ou anterior
+class Vendor_Model_Foo
+{
+
+}</code></pre>
+
+
+<h3 id="4-constantes-de-classes-propriedades-e-metodos">4. Constantes de classes, Propriedades e Métodos<a class="headerlink" href="#4-constantes-de-classes-propriedades-e-metodos" title="Permanent link">#</a></h3>
+<p>O Termo "classe" se refere a todas as classes, interfaces e traços.</p>
+<h4 id="41-constantes">4.1 Constantes<a class="headerlink" href="#41-constantes" title="Permanent link">#</a></h4>
+<p>Constantes de classes <strong>DEVEM</strong> ser declaradas todas em <strong>UPPER CASE</strong> com separadores underscore.
+Por exemplo:</p>
+<pre class="code"><code class="language-php">&lt;?php
+
+namespace Vendor\Model;
+
+class Foo
+{
+    const VERSION = '1.0';
+    const DATE_APPROVED = '2012-06-01';
+}</code></pre>
+
+
+<h4 id="42-propriedades">4.2 Propriedades<a class="headerlink" href="#42-propriedades" title="Permanent link">#</a></h4>
+<p>Este guia intencionamento evita qualquer recomendação a cerca do uso de nomes de propriedades
+<strong>$StudlyCaps</strong>, <strong>$camelCase</strong>, ou <strong>$under_score</strong>.</p>
+<p>Qualquer convenção de nome que for usada <strong>DEVERIA</strong> ser aplicada consistentemente dentro de um
+escopo razoável. Este escopo pode ser o nível do distribuidor, o nível do pacote, o nível da classe,
+ou o escopo do método.</p>
+<h4 id="43-metodos">4.3 Métodos<a class="headerlink" href="#43-metodos" title="Permanent link">#</a></h4>
+<p>Nomes de métodos <strong>DEVEM</strong> ser declarados em <strong>camelCase()</strong>.</p>
 <h2 id="psr-2-guia-de-estilo-de-codificacao">PSR 2 - Guia de Estilo de Codificação<a class="headerlink" href="#psr-2-guia-de-estilo-de-codificacao" title="Permanent link">#</a></h2>
 <h2 id="psr-3-interface-de-log">PSR 3 - Interface de Log<a class="headerlink" href="#psr-3-interface-de-log" title="Permanent link">#</a></h2>
 <h2 id="psr-4-padrao-de-autocarregamento">PSR 4 - Padrão de autocarregamento<a class="headerlink" href="#psr-4-padrao-de-autocarregamento" title="Permanent link">#</a></h2>
